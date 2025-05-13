@@ -57,12 +57,20 @@ int main () {
                 cout<<"Precio final con descuento "<<zapato1<<endl;
                 cout<<"Compra realizada con exito"<<endl;
                 cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            else if (saldo<zapato1){
+                int (faltante = (zapato1 - saldo));
+                cout<<"El saldo es insuficiente"<<endl;
+                cout<<"Necesitas: "<<faltante<<"$"<< endl;
+                }
+                else(){
+                    cout <<"Datos invalidos"<<endl;
+                }
             }
             break;
             case '2':
             if(saldo>=zapato2){
                int (restante = (saldo - zapato2));
-                cout<<"Ha seleccionado: Zapato deportivo"<<endl;
+                cout<<"Ha seleccionado: Zapato Formal"<<endl;
                 cout<<"Precio final con descuento "<<zapato2<<endl;
                 cout<<"Compra realizada con exito"<<endl;
                 cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
@@ -71,7 +79,7 @@ int main () {
             case '3':
             if(saldo>=zapato3){
                int (restante = (saldo - zapato3));
-                cout<<"Ha seleccionado: Zapato deportivo"<<endl;
+                cout<<"Ha seleccionado: Zapato Premium"<<endl;
                 cout<<"Precio final con descuento "<<zapato3<<endl;
                 cout<<"Compra realizada con exito"<<endl;
                 cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
@@ -79,19 +87,63 @@ int main () {
             break;
         
         default:
+        cout<<"Error de sistema, disculpe las molestias"<<endl;        
             break;
         }
         break;
 
-     case 'b':
+    case 'b':
         cout << "4. Zapato Deportivo: $70 "<<" Descuento del 15% "<<" Precio final: $59.5"<endl;
-         int zapato4 = 59.5;
+        int zapato4 = 59.5;
+        
         cout << "5. Zapato Formal: $100 "<<" Descuento del 15% "<<" Precio final: $85"<endl;
          int zapato5 = 85;
         cout << "6. Zapato Premium: $250 "<<" Descuento del 15% "<<" Precio final: $212.5"<endl;
-        int zapato6 = 212.5;
+         int zapato3 = 212.5;
         cout << "Seleccione una opcion: " <<enld;
         cin>>zapato;
+        switch (zapato)
+        {
+        case '4':
+            if(saldo>=zapato4){
+               int (restante = (saldo - zapato4));
+                cout<<"Ha seleccionado: Zapato deportivo"<<endl;
+                cout<<"Precio final con descuento "<<zapato4<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            else if (saldo<zapato4){
+                int (faltante = (zapato4 - saldo));
+                cout<<"El saldo es insuficiente"<<endl;
+                cout<<"Necesitas: "<<faltante<<"$"<< endl;
+                }
+                else(){
+                    cout <<"Datos invalidos"<<endl;
+                }
+            }
+            break;
+            case '2':
+            if(saldo>=zapato5){
+               int (restante = (saldo - zapato5));
+                cout<<"Ha seleccionado: Zapato Formal"<<endl;
+                cout<<"Precio final con descuento "<<zapato5<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            }
+            break;
+            case '3':
+            if(saldo>=zapato6){
+               int (restante = (saldo - zapato6));
+                cout<<"Ha seleccionado: Zapato Premium"<<endl;
+                cout<<"Precio final con descuento "<<zapato6<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            }
+            break;
+        
+        default:
+        cout<<"Error de sistema, disculpe las molestias"<<endl;        
+            break;
+        }
         break;
 
     case 'c':
@@ -104,9 +156,85 @@ int main () {
     cout << "Seleccione una opcion: " <<enld;
         cin>>zapato;
 
-    break;
-    
+         switch (zapato)
+        {
+        case '1':
+            if(saldo>=zapato1){
+               int (restante = (saldo - zapato1));
+                cout<<"Ha seleccionado: Zapato deportivo"<<endl;
+                cout<<"Precio final con descuento "<<zapato1<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            else if (saldo<zapato1){
+                int (faltante = (zapato1 - saldo));
+                cout<<"El saldo es insuficiente"<<endl;
+                cout<<"Necesitas: "<<faltante<<"$"<< endl;
+                }
+                else(){
+                    cout <<"Datos invalidos"<<endl;
+                }
+            }
+            break;
+            case '2':
+            if(saldo>=zapato2){
+               int (restante = (saldo - zapato2));
+                cout<<"Ha seleccionado: Zapato Formal"<<endl;
+                cout<<"Precio final con descuento "<<zapato2<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            }
+            break;
+            case '3':
+            if(saldo>=zapato3){
+               int (restante = (saldo - zapato3));
+                cout<<"Ha seleccionado: Zapato Premium"<<endl;
+                cout<<"Precio final con descuento "<<zapato3<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            }
+            break;
+            case '4':
+            if(saldo>=zapato4){
+               int (restante = (saldo - zapato4));
+                cout<<"Ha seleccionado: Zapato deportivo"<<endl;
+                cout<<"Precio final con descuento "<<zapato4<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            else if (saldo<zapato4){
+                int (faltante = (zapato4 - saldo));
+                cout<<"El saldo es insuficiente"<<endl;
+                cout<<"Necesitas: "<<faltante<<"$"<< endl;
+                }
+                else(){
+                    cout <<"Datos invalidos"<<endl;
+                }
+            }
+            break;
+            case '2':
+            if(saldo>=zapato5){
+               int (restante = (saldo - zapato5));
+                cout<<"Ha seleccionado: Zapato Formal"<<endl;
+                cout<<"Precio final con descuento "<<zapato5<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            }
+            break;
+            case '3':
+            if(saldo>=zapato6){
+               int (restante = (saldo - zapato6));
+                cout<<"Ha seleccionado: Zapato Premium"<<endl;
+                cout<<"Precio final con descuento "<<zapato6<<endl;
+                cout<<"Compra realizada con exito"<<endl;
+                cout<<"Su saldo restante es: "<<restante<<"$"<<endl;
+            }
+            break;
+        
+        default:
+        cout<<"Error de sistema, disculpe las molestias"<<endl;        
+            break;
+        } 
     default:
+    cout<<"Error de sistema, disculpe las molestias"<<endl;
         break;
     }
 
